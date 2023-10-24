@@ -9,6 +9,8 @@ import za.co.rain.promotion.catalog.enums.LifecycleStatus;
 import za.co.rain.promotion.catalog.facade.CatalogElementFacade;
 import za.co.rain.promotion.catalog.repository.CatalogElementRepository;
 
+import java.util.List;
+
 @Component
 public class DefaultCatalogElementFacade implements CatalogElementFacade {
 
@@ -24,7 +26,7 @@ public class DefaultCatalogElementFacade implements CatalogElementFacade {
             // Update the status
             catalogElement.setStatus(newStatus);
             // Save the updated entity...
-            //CatalogElement catalogElement1 = catalogElementRepository.save(catalogElement1);
+            catalogElementRepository.save(catalogElement);
         }
     }
 
@@ -52,6 +54,11 @@ public class DefaultCatalogElementFacade implements CatalogElementFacade {
     @Override
     public CatalogElement findCatalogElementById(Long id) {
         return catalogElementRepository.findCatalogElementById(id);
+    }
+
+    @Override
+    public List<CatalogElement> findall() {
+        return catalogElementRepository.findAll();
     }
 
 

@@ -9,6 +9,8 @@ import za.co.rain.promotion.catalog.enums.LifecycleStatus;
 import za.co.rain.promotion.catalog.facade.impl.DefaultCatalogElementFacade;
 import za.co.rain.promotion.catalog.service.CatalogElementService;
 
+import java.util.List;
+
 @Service
 public class DefaultCatalogElementService implements CatalogElementService {
 
@@ -23,6 +25,11 @@ public class DefaultCatalogElementService implements CatalogElementService {
     @Override
     public CatalogElement getCatalogElementById(Long id) {
         return defaultCatalogElementFacade.findCatalogElementById(id);
+    }
+
+    @Override
+    public List<CatalogElement> getAllCatalogElements() {
+        return defaultCatalogElementFacade.findall();
     }
 
 
