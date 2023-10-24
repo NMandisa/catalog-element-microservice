@@ -4,9 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import za.co.rain.promotion.catalog.domain.CatalogElement;
-import za.co.rain.promotion.catalog.domain.LifecycleStatus;
-import za.co.rain.promotion.catalog.facade.impl.DefaultCatalogElementFacade;
 
 @SpringBootApplication
 public class PromotionCatalogApplication {

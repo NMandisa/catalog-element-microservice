@@ -4,7 +4,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import za.co.rain.promotion.catalog.domain.CatalogElement;
-import za.co.rain.promotion.catalog.domain.LifecycleStatus;
+import za.co.rain.promotion.catalog.enums.LifecycleStatus;
 
 import java.util.List;
 

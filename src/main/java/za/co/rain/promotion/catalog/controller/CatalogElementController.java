@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import za.co.rain.promotion.catalog.PromotionCatalogApplication;
 import za.co.rain.promotion.catalog.domain.CatalogElement;
-import za.co.rain.promotion.catalog.domain.LifecycleStatus;
+import za.co.rain.promotion.catalog.enums.LifecycleStatus;
 import za.co.rain.promotion.catalog.service.impl.DefaultCatalogElementService;
 
 @CrossOrigin(allowedHeaders = {"*"}, origins = "*")

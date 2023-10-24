@@ -1,4 +1,4 @@
-package za.co.rain.promotion.catalog.domain;
+package za.co.rain.promotion.catalog.enums;
 
 public enum LifecycleStatus {
     IN_STUDY,

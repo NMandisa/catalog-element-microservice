@@ -1,6 +1,7 @@
 package za.co.rain.promotion.catalog.domain;
 
 import jakarta.persistence.*;
+import za.co.rain.promotion.catalog.enums.LifecycleStatus;
 
 import java.io.Serializable;
 @Entity

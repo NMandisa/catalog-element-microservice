@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import za.co.rain.promotion.catalog.domain.CatalogElement;
-import za.co.rain.promotion.catalog.domain.LifecycleStatus;
+import za.co.rain.promotion.catalog.enums.LifecycleStatus;
 import za.co.rain.promotion.catalog.facade.CatalogElementFacade;
 import za.co.rain.promotion.catalog.repository.CatalogElementRepository;
 

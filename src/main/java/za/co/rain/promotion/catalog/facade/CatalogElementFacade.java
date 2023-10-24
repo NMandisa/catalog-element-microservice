@@ -1,7 +1,7 @@
 package za.co.rain.promotion.catalog.facade;
 
 import za.co.rain.promotion.catalog.domain.CatalogElement;
-import za.co.rain.promotion.catalog.domain.LifecycleStatus;
+import za.co.rain.promotion.catalog.enums.LifecycleStatus;
 
 public interface CatalogElementFacade {
 

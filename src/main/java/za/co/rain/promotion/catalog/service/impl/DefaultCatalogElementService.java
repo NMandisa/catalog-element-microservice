@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import za.co.rain.promotion.catalog.domain.CatalogElement;
-import za.co.rain.promotion.catalog.domain.LifecycleStatus;
+import za.co.rain.promotion.catalog.enums.LifecycleStatus;
 import za.co.rain.promotion.catalog.facade.impl.DefaultCatalogElementFacade;
 import za.co.rain.promotion.catalog.service.CatalogElementService;
 
@@ -13,6 +13,7 @@ import za.co.rain.promotion.catalog.service.CatalogElementService;
 public class DefaultCatalogElementService implements CatalogElementService {
 
     private static final Logger LOGGER  = LoggerFactory.getLogger(DefaultCatalogElementService.class);
+    @Autowired
     private DefaultCatalogElementFacade defaultCatalogElementFacade;
     @Override
     public void validateAndUpdateStatus(CatalogElement catalogElement, LifecycleStatus newStatus) {
