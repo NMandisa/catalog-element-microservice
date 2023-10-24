@@ -31,20 +31,18 @@ public class DefaultCatalogElementFacade implements CatalogElementFacade {
     @Override
     public void validateTransition(LifecycleStatus currentStatus, LifecycleStatus newStatus) {
         // Implement transition validation logic here..
-        LifecycleStatus currentLifecycleStatus = currentStatus;
-        LifecycleStatus lifecycleNewStatus = newStatus;
-        if(currentLifecycleStatus.equals(newStatus))//Check current LifeCycleStatus is not the same as New LifeCycleStatus
+        if(currentStatus.equals(newStatus))//Check current LifeCycleStatus is not the same as New LifeCycleStatus
         {isValidtransition=false;
             LOGGER.info("Current LifeCycleStatus is the same as New Status",DefaultCatalogElementFacade.class);
         }
-        else if (lifecycleNewStatus.equals(currentLifecycleStatus))//Check New LifeCycleStatus is not the same as current LifeCycleStatus
+        else if (newStatus.equals(currentStatus))//Check New LifeCycleStatus is not the same as current LifeCycleStatus
         {isValidtransition=false;
             LOGGER.info("Transition invalid : New LifeCycleStatus is the same as Current LifeCycleStatus",DefaultCatalogElementFacade.class);}
-        else if (currentLifecycleStatus.equals(newStatus) || lifecycleNewStatus.equals(currentLifecycleStatus))//validating that not one of the condition is being met(might seem redundant
+        else if (currentStatus.equals(newStatus) || newStatus.equals(currentStatus))//validating that not one of the condition is being met(might seem redundant
         {isValidtransition=false;
             LOGGER.info("Transition invalid : Current LifeCycleStatus or New LifeCycle Status shouldn't be he same",DefaultCatalogElementFacade.class);
         }
-        else if (!currentLifecycleStatus.equals(newStatus) && !lifecycleNewStatus.equals(currentLifecycleStatus))//checking if niether are the same and if that condition is met that the transition is valid
+        else if (!currentStatus.equals(newStatus) && !newStatus.equals(currentStatus))//checking if niether are the same and if that condition is met that the transition is valid
         {isValidtransition=true;
             LOGGER.info("Transition valid: Current LifeCycleStatus and New LifeCycleStatus are not the same ",DefaultCatalogElementFacade.class);
         }
