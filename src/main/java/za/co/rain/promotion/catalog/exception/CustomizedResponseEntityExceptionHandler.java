@@ -22,7 +22,7 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
     }
 
     @ExceptionHandler(CatalogElementNotFoundException.class)
-    public final ResponseEntity<ErrorResponseDetails> handleUserNotFoundException(Exception ex, WebRequest request) throws Exception {
+    public final ResponseEntity<ErrorResponseDetails> handleCatalogElementNotFoundException(Exception ex, WebRequest request) throws Exception {
         ErrorResponseDetails errorDetails = new ErrorResponseDetails(LocalDateTime.now(),
                 ex.getMessage(), request.getDescription(false));
         return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);

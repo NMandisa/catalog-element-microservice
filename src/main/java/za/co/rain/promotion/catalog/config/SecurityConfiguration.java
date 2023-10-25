@@ -34,9 +34,7 @@ public class SecurityConfiguration  {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
-        http
-                .csrf(csrf ->csrf.disable())
-                .authorizeHttpRequests(auth-> {
+        http.csrf(csrf ->csrf.disable()).authorizeHttpRequests(auth-> {
                     auth.requestMatchers(antMatcher("/catalog-element/**")).permitAll();
                     auth.requestMatchers(antMatcher("/")).permitAll();
                     auth.anyRequest().authenticated();
@@ -44,7 +42,6 @@ public class SecurityConfiguration  {
         http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         return http.build();
-
     }
 
 
