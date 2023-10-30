@@ -1,4 +1,4 @@
-package za.co.rain.promotion.catalog;
+package za.co.fynbos.catalog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

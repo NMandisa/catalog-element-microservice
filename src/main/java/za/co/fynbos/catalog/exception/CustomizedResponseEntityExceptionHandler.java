@@ -1,4 +1,4 @@
-package za.co.rain.promotion.catalog.exception;
+package za.co.fynbos.catalog.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-import za.co.rain.promotion.catalog.entity.ErrorResponseDetails;
+import za.co.fynbos.catalog.entity.ErrorResponseDetails;
 
 import java.time.LocalDateTime;
 

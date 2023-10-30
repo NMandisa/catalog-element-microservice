@@ -1,4 +1,4 @@
-package za.co.rain.promotion.catalog.exception;
+package za.co.fynbos.catalog.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

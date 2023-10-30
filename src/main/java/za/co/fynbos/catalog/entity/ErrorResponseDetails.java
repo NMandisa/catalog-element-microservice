@@ -1,4 +1,4 @@
-package za.co.rain.promotion.catalog.entity;
+package za.co.fynbos.catalog.entity;
 
 import java.time.LocalDateTime;
 
