@@ -11,14 +11,12 @@ import org.springframework.security.web.SecurityFilterChain;
 import static org.springframework.security.web.util.matcher.AntPathRequestMatcher.antMatcher;
 
 @Configuration
-@EnableWebSecurity
-@EnableMethodSecurity
 public class SecurityConfiguration  {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
         http.csrf(csrf ->csrf.disable()).authorizeHttpRequests(auth-> {
-                    auth.requestMatchers(antMatcher("/catalog-element/**")).permitAll();
+                    auth.requestMatchers(antMatcher("/catalog-elements/**")).permitAll();
                     auth.requestMatchers(antMatcher("/")).permitAll();
                     auth.anyRequest().authenticated();
                 });

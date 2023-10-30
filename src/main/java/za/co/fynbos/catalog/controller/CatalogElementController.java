@@ -13,7 +13,7 @@ import java.util.List;
 
 @CrossOrigin(allowedHeaders = {"*"}, origins = "*")
 @RestController
-@RequestMapping("/catalog-element")
+@RequestMapping("/catalog-elements")
 public class CatalogElementController {
     private static final Logger LOGGER  = LoggerFactory.getLogger(CatalogApplication.class);
 
