@@ -3,6 +3,7 @@ package za.co.fynbos.catalog.facade.impl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import za.co.fynbos.catalog.facade.CatalogElementFacade;
 import za.co.fynbos.catalog.repository.CatalogElementRepository;
@@ -12,6 +13,7 @@ import za.co.fynbos.catalog.enums.LifecycleStatus;
 import java.util.List;
 
 @Component
+@Scope("singleton")
 public class DefaultCatalogElementFacade implements CatalogElementFacade {
     private static final Logger LOGGER  = LoggerFactory.getLogger(CatalogElementFacade.class.getName());
     private boolean isValidtransition;
