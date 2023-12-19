@@ -13,8 +13,7 @@ import java.util.List;
 
 @Component
 public class DefaultCatalogElementFacade implements CatalogElementFacade {
-
-    private static final Logger LOGGER  = LoggerFactory.getLogger(DefaultCatalogElementFacade.class);
+    private static final Logger LOGGER  = LoggerFactory.getLogger(CatalogElementFacade.class.getName());
     private boolean isValidtransition;
     @Autowired
     private CatalogElementRepository catalogElementRepository;
