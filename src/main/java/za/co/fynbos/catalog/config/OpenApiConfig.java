@@ -17,8 +17,8 @@ import io.swagger.v3.oas.annotations.servers.Server;
                         email = "noxolomandisamkhungo@gmail.com",
                         url = ""
                 ),
-                description = "OpenApi documentation for Spring Security",
-                title = "OpenApi specification - Student Management Portal",
+                description = "OpenApi documentation Catalog Element Microservice",
+                title = "OpenApi specification - Catalog Element Microservice",
                 version = "1.0",
                 license = @License(
                         name = "Licence name",
