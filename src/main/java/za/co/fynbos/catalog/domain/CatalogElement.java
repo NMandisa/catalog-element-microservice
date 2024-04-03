@@ -1,7 +1,7 @@
 package za.co.fynbos.catalog.domain;
 
 import jakarta.persistence.*;
-import za.co.fynbos.catalog.enums.LifecycleStatus;
+import za.co.fynbos.catalog.domain.enums.LifecycleStatus;
 
 import java.io.Serializable;
 @Entity

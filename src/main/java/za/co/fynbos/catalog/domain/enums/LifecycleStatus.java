@@ -1,4 +1,4 @@
-package za.co.fynbos.catalog.enums;
+package za.co.fynbos.catalog.domain.enums;
 
 public enum LifecycleStatus {
     IN_STUDY,

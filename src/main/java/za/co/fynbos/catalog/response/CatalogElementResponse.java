@@ -1,19 +1,19 @@
-package za.co.fynbos.catalog.dto;
+package za.co.fynbos.catalog.response;
 
 import za.co.fynbos.catalog.domain.CatalogElement;
-import za.co.fynbos.catalog.enums.LifecycleStatus;
+import za.co.fynbos.catalog.domain.enums.LifecycleStatus;
 
-public class CatalogElementUpdatedStatusDTO {
+public class CatalogElementResponse {
 
     private CatalogElement catalogElement;
     private LifecycleStatus oldStatus;
     private LifecycleStatus newStatus;
 
-    public CatalogElementUpdatedStatusDTO(){
+    public CatalogElementResponse(){
         super();
     }
 
-    public CatalogElementUpdatedStatusDTO(CatalogElement catalogElement, LifecycleStatus oldStatus, LifecycleStatus newStatus){
+    public CatalogElementResponse(CatalogElement catalogElement, LifecycleStatus oldStatus, LifecycleStatus newStatus){
         super();
         this.catalogElement=catalogElement;
         this.oldStatus =oldStatus;

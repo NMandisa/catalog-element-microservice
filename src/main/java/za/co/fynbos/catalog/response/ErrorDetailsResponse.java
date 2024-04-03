@@ -1,14 +1,14 @@
-package za.co.fynbos.catalog.entity;
+package za.co.fynbos.catalog.response;
 
 import java.time.LocalDateTime;
 
-public class ErrorResponseDetails {
+public class ErrorDetailsResponse {
 
     private LocalDateTime timestamp;
     private String message;
     private String details;
 
-    public ErrorResponseDetails(LocalDateTime timestamp, String message, String details) {
+    public ErrorDetailsResponse(LocalDateTime timestamp, String message, String details) {
         super();
         this.timestamp = timestamp;
         this.message = message;

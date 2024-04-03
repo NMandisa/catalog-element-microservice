@@ -8,7 +8,7 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.annotation.Rollback;
 import za.co.fynbos.catalog.domain.CatalogElement;
-import za.co.fynbos.catalog.enums.LifecycleStatus;
+import za.co.fynbos.catalog.domain.enums.LifecycleStatus;
 import za.co.fynbos.catalog.repository.CatalogElementRepository;
 
 import java.util.List;

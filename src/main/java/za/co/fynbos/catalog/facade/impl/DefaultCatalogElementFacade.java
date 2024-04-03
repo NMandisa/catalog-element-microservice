@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import za.co.fynbos.catalog.facade.CatalogElementFacade;
 import za.co.fynbos.catalog.repository.CatalogElementRepository;
 import za.co.fynbos.catalog.domain.CatalogElement;
-import za.co.fynbos.catalog.enums.LifecycleStatus;
+import za.co.fynbos.catalog.domain.enums.LifecycleStatus;
 
 import java.util.List;
 
